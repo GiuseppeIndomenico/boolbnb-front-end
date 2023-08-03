@@ -1,0 +1,61 @@
+// COLORS
+$primary: #ff385c;
+$white: #ffffff;
+$black: #222222;
+$primary-subtle: #fff1f1;
+//SCROLLBAR
+$scrollbar-width: 8px;
+$scrollbar-thumb-color: #ff385c;
+$scrollbar-thumb-hover-color: #f14766;
+$scrollbar-track-color: #222222;
+$scrollbar-border-radius: 5px;
+
+* {
+    &::-webkit-scrollbar {
+        width: $scrollbar-width;
+        background-color: $scrollbar-track-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $scrollbar-thumb-color;
+        border-radius: $scrollbar-border-radius;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: $scrollbar-thumb-hover-color;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $scrollbar-track-color;
+        border-radius: $scrollbar-border-radius;
+    }
+}
+
+#app {
+    font-family: "Lexend Deca", sans-serif, Arial, Helvetica, sans-serif !important;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ff385c !important;
+    --bs-btn-border-color: #ff385c !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #e91f44 !important;
+    --bs-btn-hover-border-color: #e91f44 !important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #e91c42 !important;
+    --bs-btn-active-border-color: #e91c42 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #fa5674 !important;
+    --bs-btn-disabled-border-color: #fa5674 !important;
+}
+
+.border-pink {
+    border-color: $primary !important;
+
+    input {
+        border-color: $primary !important;
+    }
+}
